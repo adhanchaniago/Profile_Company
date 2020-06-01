@@ -11,8 +11,8 @@ class Login extends CI_Controller {
 
 	public function proses()
 	{
-		$user = ($this->input->post('username') == 'admin' ? true:false);
-		$pass = ($this->input->post('password') == 'admin' ? true:false);
+		$user = ($this->input->post('username') == 'admin_company' ? true:false);
+		$pass = ($this->input->post('password') == '414414' ? true:false);
 		if($user && $pass){
 			$session = [
 				'userdata' => $user,

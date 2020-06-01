@@ -14,7 +14,7 @@ class Admin extends CI_Controller
 
     public function index()
     {
-        $data['web_name'] = 'PT Zhong lian dian qi';
+        $data['web_name'] = 'PT Karya Bangsa Kita';
         $data['pagename'] = 'Dashboard';
         $data['page'] = $this->load->view('back-end/dashboard', $data, true);
         $this->load->view('back-end/index', $data);
@@ -23,7 +23,7 @@ class Admin extends CI_Controller
     public function contact()
     {
         $data['data'] = $this->m_main->select_all('tbl_company', 'row');
-        $data['web_name'] = 'PT Zhong lian dian qi';
+        $data['web_name'] = 'PT Karya Bangsa Kita';
         $data['pagename'] = 'Contact';
         $data['page'] = $this->load->view('back-end/contact', $data, true);
         $this->load->view('back-end/index', $data);
@@ -32,7 +32,7 @@ class Admin extends CI_Controller
     public function slider()
     {
         $data['img'] = $this->m_main->select_all('tbl_slider', 'result');
-        $data['web_name'] = 'PT Zhong lian dian qi';
+        $data['web_name'] = 'PT Karya Bangsa Kita';
         $data['pagename'] = 'Slider';
         $data['page'] = $this->load->view('back-end/slider', $data, true);
         $this->load->view('back-end/index', $data);
@@ -41,7 +41,7 @@ class Admin extends CI_Controller
     public function team()
     {
         $data['img'] = $this->m_main->select_all('tbl_team', 'result');
-        $data['web_name'] = 'PT Zhong lian dian qi';
+        $data['web_name'] = 'PT Karya Bangsa Kita';
         $data['pagename'] = 'Team';
         $data['page'] = $this->load->view('back-end/team', $data, true);
         $this->load->view('back-end/index', $data);
@@ -50,7 +50,7 @@ class Admin extends CI_Controller
     public function promo()
     {
         $data['img'] = $this->m_main->select_all('tbl_promo', 'result');
-        $data['web_name'] = 'PT Zhong lian dian qi';
+        $data['web_name'] = 'PT Karya Bangsa Kita';
         $data['pagename'] = 'Promotion';
         $data['page'] = $this->load->view('back-end/promo', $data, true);
         $this->load->view('back-end/index', $data);
@@ -59,7 +59,7 @@ class Admin extends CI_Controller
     public function service()
     {
         $data['img'] = $this->m_main->select_all('tbl_career', 'result');
-        $data['web_name'] = 'PT Zhong lian dian qi';
+        $data['web_name'] = 'PT Karya Bangsa Kita';
         $data['pagename'] = 'Career';
         $data['page'] = $this->load->view('back-end/service', $data, true);
         $this->load->view('back-end/index', $data);
@@ -68,7 +68,7 @@ class Admin extends CI_Controller
     public function event()
     {
         $data['img'] = $this->m_main->select_all('tbl_project', 'result');
-        $data['web_name'] = 'PT Zhong lian dian qi';
+        $data['web_name'] = 'PT Karya Bangsa Kita';
         $data['pagename'] = 'Project';
         $data['page'] = $this->load->view('back-end/event', $data, true);
         $this->load->view('back-end/index', $data);
